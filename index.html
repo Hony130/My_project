@@ -78,6 +78,8 @@
     var start = function (){
         for (var i=0 ; i<tools.length; i++) {
             tools[i].position.x+=i*10;
+            tools[i].position.z=0;
+            tools[i].position.y=1;
             tools[0].scaling = new BABYLON.Vector3(10,10,10);
         }
         scene.registerBeforeRender(function(){
